@@ -104,8 +104,8 @@ export const FUN_FACTS = [
     color: "bg-[#03E39D] text-[#1A0F1C]"
   },
   {
-    title: "Atriz de Boxe de Roteiro 🥊",
-    text: "Escrevo 15 piadas por vídeo, a diretoria escolhe 3 e a melhor de todas surge improvisada gravando.",
+    title: "Professora de dia 📚",
+    text: "Passo o dia em sala de aula, então explicar as coisas de um jeito simples virou meio que meu superpoder.",
     color: "bg-[#FB58A7] text-[#1A0F1C]"
   },
   {

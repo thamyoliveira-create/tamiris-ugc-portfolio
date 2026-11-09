@@ -22,7 +22,7 @@ export default function Footer() {
               />
             </Link>
             <p className="text-[#FFF5FB]/80 max-w-sm text-sm sm:text-base leading-relaxed">
-              Criadora de conteúdo UGC focada em humor, situações da vida real e alta conexão com o seu público. Sem papas na língua e com muita conversão!
+              Professora, engenheira e criadora de conteúdo. Falo da vida real, com humor e sem filtro, e das coisas que fazem parte da minha rotina de verdade.
             </p>
             <div className="pt-2">
               <span className="font-mono text-xs bg-[#03E39D]/10 text-[#03E39D] px-3 py-1.5 rounded-full border border-[#03E39D]/30 inline-block">

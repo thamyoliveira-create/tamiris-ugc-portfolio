@@ -9,7 +9,7 @@ import { FUN_FACTS } from '@/data/videos';
 
 export const metadata = {
   title: "Sobre a Tamiris | Humor & Vida Real UGC",
-  description: "Conheça a Tamiris, a mente e o humor por trás de vídeos UGC que convertem e viralizam.",
+  description: "Conheça a Tamiris: professora, engenheira e criadora de conteúdo sobre a vida real.",
 };
 
 export default function SobrePage() {
@@ -52,13 +52,13 @@ export default function SobrePage() {
 
               <div className="space-y-4 text-base sm:text-lg text-[#1A0F1C]/85 leading-relaxed font-normal">
                 <p>
-                  Sabe aquele comercial chato que você pula em 3 segundos? Eu sou exatamente o oposto disso. Minha missão é fazer o consumidor rir, se identificar e pensar: <em>&quot;Caramba, essa sou eu todinha! Preciso desse produto agora.&quot;</em>
+                  Sou a Tamiris. De dia, professora. No resto do tempo, tentando dormir melhor, me organizar e não esquecer a garrafinha de água em casa. Meus vídeos são isso: a minha vida como ela é.
                 </p>
                 <p>
-                  Comecei criando vídeos para desabafar sobre os perrengues do cotidiano, boletos, trabalho e relacionamentos. Quando percebi que as marcas podiam se conectar com as pessoas através da vulnerabilidade cômica e da verdade, encontrei meu lugar no UGC.
+                  Comecei gravando por diversão, falando dos perrengues que todo mundo passa. Aí percebi que as pessoas se viam nos meus vídeos, e é esse o ponto: quem me assiste confia porque se reconhece.
                 </p>
                 <p>
-                  Não entrego só um vídeo com boa iluminação: entrego um <strong>roteiro inteligente</strong>, timing cômico afiado e uma atuação que parece aquela sua melhor amiga te indicando algo no WhatsApp.
+                  Só falo de produto que eu usaria de verdade. Se entrou no meu vídeo, é porque entrou na minha rotina.
                 </p>
               </div>
 
@@ -153,7 +153,7 @@ export default function SobrePage() {
               </div>
               <h3 className="text-2xl font-black text-[#1A0F1C]">3. Foco em Conversão</h3>
               <p className="text-[#1A0F1C]/80 leading-relaxed text-sm">
-                O gancho (hook) nos primeiros 3 segundos prende a atenção e o CTA final guia o lead para a compra sem parecer agressivo.
+                Falo do jeito que falo com as minhas amigas. Se eu indico, é porque indicaria pra elas também.
               </p>
             </div>
           </div>

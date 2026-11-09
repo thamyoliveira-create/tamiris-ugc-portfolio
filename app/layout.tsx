@@ -16,10 +16,10 @@ const ibmPlexMono = IBM_Plex_Mono({
 
 export const metadata: Metadata = {
   title: "Tamiris | Criadora de Conteúdo UGC (Humor & Real Life)",
-  description: "Portfólio oficial da Tamiris. Criação de conteúdo UGC com humor, situações da vida real e alta conversão para marcas.",
+  description: "Portfólio da Tamiris, criadora de conteúdo UGC sobre vida real, rotina e humor.",
   openGraph: {
     title: "Tamiris | UGC & Humor",
-    description: "Vídeos UGC hilários e autênticos para marcas que querem engajar de verdade.",
+    description: "Vídeos de vida real, gravados em casa, sobre as coisas que fazem parte da minha rotina.",
     url: "https://tamiris-ugc.vercel.app",
     siteName: "Tamiris UGC",
     locale: "pt_BR",

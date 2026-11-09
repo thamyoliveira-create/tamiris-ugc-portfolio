@@ -20,14 +20,14 @@ export default function ComoTrabalhoPage() {
     {
       number: "02",
       title: "Roteiro & Aprovação",
-      description: "Escrevo o roteiro completo com ganchos (hooks) potentes, desenvolvimento de humor da vida real e chamada para ação (CTA). Você valida antes de eu ligar a câmera.",
+      description: "Escrevo um roteiro com a minha cara, do jeito que eu falaria do produto pra uma amiga. Você aprova antes de eu gravar.",
       icon: FileText,
       color: "border-[#FB58A7]"
     },
     {
       number: "03",
       title: "Gravação & Edição",
-      description: "Gravação em alta definição (4K/60fps vertical), áudio impecável, cortes dinâmicos, legendas automáticas chamativas e sonoplastia que segura a atenção.",
+      description: "Gravo na minha casa, no cenário de sempre, e edito com legendas e cortes pra ficar gostoso de assistir.",
       icon: Video,
       color: "border-[#F4B6DF]"
     },
@@ -117,7 +117,7 @@ export default function ComoTrabalhoPage() {
             Como funciona a <span className="text-gradient">nossa parceria</span>
           </h1>
           <p className="text-lg text-[#1A0F1C]/80 max-w-2xl mx-auto">
-            Processo ágil, sem enrolação e com cada etapa validada com você para garantir vídeos que geram conversão de verdade.
+            Tudo combinado com você, etapa por etapa, sem surpresa no final.
           </p>
         </section>
 
@@ -162,7 +162,7 @@ export default function ComoTrabalhoPage() {
                 Tipos de <span className="text-[#FB58A7]">Entrega</span>
               </h2>
               <p className="text-[#FFF5FB]/70 text-sm sm:text-base">
-                Escolha o formato que melhor atende a estratégia de tráfego ou orgânico da sua marca.
+                Escolha o formato que faz mais sentido pra sua marca.
               </p>
             </div>
 

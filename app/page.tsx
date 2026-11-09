@@ -27,16 +27,16 @@ export default function Home() {
                 <div className="inline-flex items-center gap-2 bg-[#F4B6DF]/50 px-4 py-2 rounded-full border border-[#FB58A7]/30">
                   <Flame className="w-4 h-4 text-[#C01A6E]" />
                   <span className="font-mono text-xs font-bold text-[#C01A6E] tracking-wide uppercase">
-                    UGC com Humor & Realidade
+                    Vida real, do jeitinho que é
                   </span>
                 </div>
 
                 <h1 className="text-4xl sm:text-6xl lg:text-7xl font-black leading-tight tracking-tight text-[#1A0F1C]">
-                  Sua marca precisa de <span className="text-gradient">engajamento real</span>, não de robô.
+                  Conteúdo de <span className="text-gradient">gente de verdade</span>, pra gente de verdade.
                 </h1>
 
                 <p className="text-lg sm:text-xl text-[#1A0F1C]/80 max-w-2xl mx-auto lg:mx-0 leading-relaxed font-normal">
-                  Oi! Eu sou a Tamiris. Crio vídeos UGC hilários e cheios de verdade que fazem seu público parar o feed e comprar o seu produto rindo.
+                  Oi, eu sou a Tamiris! Professora, engenheira, cabelo azul e uma rotina corrida igual à sua. Gravo no meu quarto, do meu jeito, mostrando como as coisas que eu uso entram no meu dia a dia. Sem cara de comercial.
                 </p>
 
                 <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4">
@@ -58,7 +58,7 @@ export default function Home() {
 
                 <div className="pt-6 flex items-center justify-center lg:justify-start gap-6 text-xs font-mono text-[#00795A]">
                   <span className="flex items-center gap-1.5"><CheckCircle2 className="w-4 h-4 text-[#03E39D]" /> Marcas como Sleep Cycle e Fluencify</span>
-                  <span className="flex items-center gap-1.5"><CheckCircle2 className="w-4 h-4 text-[#03E39D]" /> Roteiro 100% autoral</span>
+                  <span className="flex items-center gap-1.5"><CheckCircle2 className="w-4 h-4 text-[#03E39D]" /> Gravado na minha casa, sem cenário montado</span>
                 </div>
               </div>
 
@@ -84,7 +84,7 @@ export default function Home() {
         <section className="bg-[#1A0F1C] text-[#FFF5FB] py-12 border-y border-[#FB58A7]/20">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6">
             <p className="font-mono text-xs uppercase tracking-widest text-[#FB58A7]">
-              Marcas que já confiaram no meu humor caótico
+              Marcas com quem já trabalhei
             </p>
             <div className="flex flex-wrap items-center justify-center gap-8 sm:gap-16 opacity-90">
               {BRANDS.map((b, i) => (
@@ -106,10 +106,10 @@ export default function Home() {
           <div className="flex flex-col md:flex-row md:items-end justify-between mb-12">
             <div>
               <span className="font-mono text-xs text-[#C01A6E] font-bold uppercase tracking-wider bg-[#F4B6DF] px-3 py-1 rounded-full">
-                Vitrine de Sucesso
+                Meus vídeos
               </span>
               <h2 className="text-3xl sm:text-5xl font-black text-[#1A0F1C] mt-3">
-                Vídeos que <span className="text-gradient">param o feed</span>
+                Um pouco do <span className="text-gradient">meu dia a dia</span>
               </h2>
             </div>
             <Link
@@ -171,10 +171,10 @@ export default function Home() {
           <div className="bg-marca p-10 sm:p-16 rounded-3xl shadow-2xl relative overflow-hidden space-y-6">
             <div className="absolute -top-12 -left-12 w-40 h-40 bg-white/20 rounded-full blur-2xl" />
             <h2 className="text-3xl sm:text-5xl font-black text-[#1A0F1C] tracking-tight">
-              Pronto para transformar seu produto em meme (do bem) e vender mais?
+              Seu produto combina com a minha rotina?
             </h2>
             <p className="text-lg text-[#1A0F1C]/90 max-w-2xl mx-auto font-medium">
-              Vamos conversar sobre o briefing da sua próxima campanha. Sem burocracia, direto pelo WhatsApp!
+              Me conta sobre a sua marca. Se fizer sentido pra mim, vai fazer sentido pra quem me assiste. A conversa é direto pelo WhatsApp.
             </p>
             <div className="pt-4">
               <Link
@@ -182,7 +182,7 @@ export default function Home() {
                 className="inline-flex items-center gap-3 bg-[#1A0F1C] text-[#FFF5FB] font-extrabold px-10 py-5 rounded-full shadow-2xl hover:bg-[#241528] transition-all transform hover:scale-105 text-lg"
               >
                 <MessageCircle className="w-6 h-6 text-[#03E39D]" />
-                Bora fazer história juntas?
+                Me chama no WhatsApp
               </Link>
             </div>
           </div>
