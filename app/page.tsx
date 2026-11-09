@@ -3,12 +3,12 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { Play, Sparkles, MessageCircle, ArrowRight, Star, CheckCircle2, Flame } from 'lucide-react';
+import { Play, Sparkles, MessageCircle, ArrowRight, CheckCircle2, Flame } from 'lucide-react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import WhatsAppFloat from '@/components/WhatsAppFloat';
 import VideoModal from '@/components/VideoModal';
-import { VIDEOS, TESTIMONIALS, BRANDS, VideoItem } from '@/data/videos';
+import { VIDEOS, BRANDS, VideoItem } from '@/data/videos';
 
 export default function Home() {
   const [selectedVideo, setSelectedVideo] = useState<VideoItem | null>(null);
@@ -163,50 +163,6 @@ export default function Home() {
                 </div>
               </div>
             ))}
-          </div>
-        </section>
-
-        {/* TESTIMONIALS SECTION (Dark background for rhythm alternation) */}
-        <section className="py-24 bg-[#1A0F1C] text-[#FFF5FB] relative overflow-hidden">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <div className="text-center max-w-2xl mx-auto space-y-4 mb-16">
-              <span className="font-mono text-xs text-[#03E39D] uppercase tracking-wider bg-[#03E39D]/10 px-3 py-1 rounded-full border border-[#03E39D]/30">
-                Depoimentos
-              </span>
-              <h2 className="text-3xl sm:text-5xl font-black">
-                O que dizem as marcas que <span className="text-[#03E39D]">já lucraram rindo</span>
-              </h2>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              {TESTIMONIALS.map((t, idx) => (
-                <div
-                  key={idx}
-                  className="bg-[#241528] p-8 rounded-3xl border border-[#FB58A7]/20 flex flex-col justify-between space-y-6 shadow-xl hover:border-[#03E39D] transition-colors"
-                >
-                  <div className="space-y-4">
-                    <div className="flex text-[#FB58A7]">
-                      {[...Array(5)].map((_, i) => (
-                        <Star key={i} className="w-5 h-5 fill-current" />
-                      ))}
-                    </div>
-                    <p className="text-[#FFF5FB]/90 text-base italic leading-relaxed">
-                      &quot;{t.quote}&quot;
-                    </p>
-                  </div>
-
-                  <div className="flex items-center gap-4 pt-4 border-t border-[#FFF5FB]/10">
-                    <div className="relative w-12 h-12 rounded-full overflow-hidden border-2 border-[#03E39D]">
-                      <Image src={t.avatar} alt={t.author} fill className="object-cover" />
-                    </div>
-                    <div>
-                      <h4 className="font-bold text-sm text-[#FFF5FB]">{t.author}</h4>
-                      <p className="text-xs font-mono text-[#F4B6DF]">{t.role}</p>
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
           </div>
         </section>
 
