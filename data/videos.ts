@@ -31,6 +31,42 @@ export const VIDEOS: VideoItem[] = [
     thumbnailUrl: '/videos/video2.jpg',
     featured: true,
   },
+  {
+    id: '3',
+    title: 'O que eu faria se começasse do zero hoje em conteúdo UGC?',
+    brand: 'Conteúdo UGC',
+    category: 'Tutorial',
+    description: 'Dicas sinceras pra quem quer começar no UGC, sem enrolação.',
+    videoUrl: '/videos/video3.mp4',
+    thumbnailUrl: '/videos/video3.jpg',
+  },
+  {
+    id: '4',
+    title: 'Ganhos com a Fluencify',
+    brand: 'Fluencify',
+    category: 'Review',
+    description: 'Mostrando na real como funcionam os ganhos como criadora na Fluencify.',
+    videoUrl: '/videos/video4.mp4',
+    thumbnailUrl: '/videos/video4.jpg',
+  },
+  {
+    id: '5',
+    title: 'Criando meu site no meio da rotina',
+    brand: 'Sites para empreendedores',
+    category: 'Humor',
+    description: 'Vida real de quem empreende: notebook, garrafinha e um site saindo do papel.',
+    videoUrl: '/videos/video5.mp4',
+    thumbnailUrl: '/videos/video5.jpg',
+  },
+  {
+    id: '6',
+    title: '10/10 websites for entrepreneurs',
+    brand: 'Sites para empreendedores',
+    category: 'Review',
+    description: 'Lista rápida e divertida de sites que salvam a vida de quem empreende.',
+    videoUrl: '/videos/video6.mp4',
+    thumbnailUrl: '/videos/video6.jpg',
+  },
 ];
 
 export const TESTIMONIALS = [
