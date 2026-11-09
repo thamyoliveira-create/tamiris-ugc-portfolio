@@ -1,7 +1,7 @@
 'use client';
 import React, { useState } from 'react';
 import Link from 'next/link';
-import { ClipboardList, FileText, Video, Sparkles, ChevronDown, Check, ArrowRight, MessageCircle } from 'lucide-react';
+import { ClipboardList, FileText, Video, Sparkles, ChevronDown, Check, ArrowRight, MessageCircle, Smartphone, Laptop, Tablet, Mic, Lightbulb, Aperture } from 'lucide-react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import WhatsAppFloat from '@/components/WhatsAppFloat';
@@ -38,6 +38,15 @@ export default function ComoTrabalhoPage() {
       icon: Sparkles,
       color: "border-[#03E39D]"
     }
+  ];
+
+  const equipment = [
+    { icon: Smartphone, name: "iPhone 16", desc: "Grava tudo em vertical, com imagem bonita e nítida." },
+    { icon: Mic, name: "Microfone de lapela", desc: "Pra voz sair limpa, sem eco de quarto." },
+    { icon: Aperture, name: "Tripé com ring light", desc: "Celular firme e rosto bem iluminado." },
+    { icon: Lightbulb, name: "Luz de iluminação", desc: "Ajuda quando a luz natural não colabora." },
+    { icon: Laptop, name: "MacBook", desc: "Onde eu edito, organizo e entrego os arquivos." },
+    { icon: Tablet, name: "iPad Pro", desc: "Pra roteiro, teleprompter e edição rápida." },
   ];
 
   const packages = [
@@ -154,6 +163,34 @@ export default function ComoTrabalhoPage() {
                 </div>
               );
             })}
+          </div>
+        </section>
+
+        {/* EQUIPAMENTO */}
+        <section className="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+          <div className="text-center max-w-2xl mx-auto space-y-3 mb-10">
+            <span className="font-mono text-xs text-[#C01A6E] font-bold uppercase tracking-wider bg-[#F4B6DF] px-3 py-1 rounded-full">
+              Meu equipamento
+            </span>
+            <h2 className="text-3xl sm:text-4xl font-black text-[#1A0F1C]">
+              Nada de estúdio, mas tudo <span className="text-gradient">pensado com carinho</span>
+            </h2>
+            <p className="text-[#1A0F1C]/80">
+              Ainda tô começando, então meu setup é simples. Mas é o suficiente pra entregar vídeo bonito, bem iluminado e com som limpo.
+            </p>
+          </div>
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+            {equipment.map((item) => (
+              <div key={item.name} className="bg-[#FFF5FB] border-2 border-[#F4B6DF] rounded-2xl p-5 flex gap-4 items-start">
+                <div className="w-11 h-11 shrink-0 rounded-xl bg-marca flex items-center justify-center">
+                  <item.icon className="w-5 h-5 text-[#1A0F1C]" />
+                </div>
+                <div>
+                  <h3 className="font-bold text-[#1A0F1C]">{item.name}</h3>
+                  <p className="text-sm text-[#1A0F1C]/70">{item.desc}</p>
+                </div>
+              </div>
+            ))}
           </div>
         </section>
 
