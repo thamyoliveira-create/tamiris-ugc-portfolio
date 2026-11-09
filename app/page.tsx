@@ -57,7 +57,7 @@ export default function Home() {
                 </div>
 
                 <div className="pt-6 flex items-center justify-center lg:justify-start gap-6 text-xs font-mono text-[#00795A]">
-                  <span className="flex items-center gap-1.5"><CheckCircle2 className="w-4 h-4 text-[#03E39D]" /> +50 marcas atendidas</span>
+                  <span className="flex items-center gap-1.5"><CheckCircle2 className="w-4 h-4 text-[#03E39D]" /> Marcas como Sleep Cycle e Fluencify</span>
                   <span className="flex items-center gap-1.5"><CheckCircle2 className="w-4 h-4 text-[#03E39D]" /> Roteiro 100% autoral</span>
                 </div>
               </div>
@@ -65,19 +65,16 @@ export default function Home() {
               {/* Hero Animated Svg / Visual */}
               <div className="lg:col-span-5 flex justify-center">
                 <div className="relative w-72 h-72 sm:w-96 sm:h-96 bg-marca rounded-3xl p-3 shadow-2xl flex items-center justify-center rotate-3 hover:rotate-0 transition-transform duration-500">
-                  <div className="w-full h-full bg-[#1A0F1C] rounded-2xl flex flex-col items-center justify-center p-8 text-center relative overflow-hidden">
-                    <div className="absolute top-0 right-0 transform translate-x-4 -translate-y-4 w-24 h-24 bg-[#03E39D]/20 rounded-full blur-xl" />
+                  <div className="w-full h-full rounded-2xl relative overflow-hidden">
                     <Image
-                      src="/marca/marca-animada.svg"
-                      alt="Tamiris Marca Animada"
-                      width={120}
-                      height={120}
-                      className="mb-4 animate-bounce"
+                      src="/fotos/tamiris-1.jpg"
+                      alt="Tamiris, criadora de conteúdo UGC"
+                      fill
+                      priority
+                      className="object-cover"
                     />
-                    <h3 className="text-xl font-black text-[#FFF5FB]">Tamiris UGC</h3>
-                    <p className="text-xs text-[#F4B6DF] font-mono mt-1">Humor que converte</p>
                   </div>
-                </div>
+                                </div>
               </div>
             </div>
           </div>
@@ -91,8 +88,13 @@ export default function Home() {
             </p>
             <div className="flex flex-wrap items-center justify-center gap-8 sm:gap-16 opacity-90">
               {BRANDS.map((b, i) => (
-                <div key={i} className="text-xl sm:text-2xl font-black tracking-tight text-[#FFF5FB] hover:text-[#03E39D] transition-colors">
-                  {b.logo}
+                <div key={i} className="flex items-center gap-3 text-xl sm:text-2xl font-black tracking-tight text-[#FFF5FB] hover:text-[#03E39D] transition-colors">
+                  {b.logo ? (
+                    <Image src={b.logo} alt={`Logo ${b.name}`} width={44} height={44} className="h-11 w-11 rounded-xl object-contain bg-white p-1" />
+                  ) : (
+                    <span className="h-11 w-11 rounded-xl bg-marca text-[#1A0F1C] flex items-center justify-center text-lg">{b.name[0]}</span>
+                  )}
+                  {b.name}
                 </div>
               ))}
             </div>

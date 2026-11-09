@@ -13,70 +13,24 @@ export interface VideoItem {
 export const VIDEOS: VideoItem[] = [
   {
     id: '1',
-    title: 'Quando o boleto chega no dia que você jurou que era rica',
-    brand: 'Nubank / Finanças',
-    category: 'Humor',
-    description: 'Sketch de humor mostrando a realidade de quem tenta planejar o mês mas o boleto chega antes do boleto anterior.',
-    videoUrl: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4',
-    thumbnailUrl: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=800&auto=format&fit=crop',
-    views: '1.2M views',
+    title: 'Hábitos saudáveis para dormir melhor',
+    brand: 'Sleep Cycle',
+    category: 'Review',
+    description: 'Rotina noturna real, do jeito que acontece no meu quarto, mostrando como o app me ajuda a dormir melhor.',
+    videoUrl: '/videos/video1.mp4',
+    thumbnailUrl: '/videos/video1.jpg',
     featured: true,
   },
   {
     id: '2',
-    title: 'Testando o skincare que promete sumir com os Boletos da cara',
-    brand: 'Sephora Brasil',
-    category: 'Review',
-    description: 'Review sincero e hilário de um sérum caríssimo testado após uma noite mal dormida de plantão no Excel.',
-    videoUrl: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4',
-    thumbnailUrl: 'https://images.unsplash.com/photo-1517841905240-472988babdf9?q=80&w=800&auto=format&fit=crop',
-    views: '850K views',
-    featured: true,
-  },
-  {
-    id: '3',
-    title: 'Unboxing da caixas misteriosa que custou um rim e meio',
-    brand: 'Shopee / Achadinhos',
-    category: 'Unboxing',
-    description: 'Abrindo pacotes duvidosos da internet com reação genuína de susto e alegria misturadas.',
-    videoUrl: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerMeltdowns.mp4',
-    thumbnailUrl: 'https://images.unsplash.com/photo-1524504388940-b1c1722653e1?q=80&w=800&auto=format&fit=crop',
-    views: '2.1M views',
-    featured: true,
-  },
-  {
-    id: '4',
-    title: 'Como fingir que entendeu a reunião de 2 horas que podia ser um e-mail',
-    brand: 'Corporate Life',
+    title: '10/10 hábitos para desenvolver disciplina extrema',
+    brand: 'Soundscape',
     category: 'Humor',
-    description: 'Tutorial passo a passo de como acenar com a cabeça e soltar um "excelente ponto" na hora certa.',
-    videoUrl: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4',
-    thumbnailUrl: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=800&auto=format&fit=crop',
-    views: '940K views',
-    featured: false,
+    description: 'Lista de hábitos com humor e muita sinceridade, do jeito que a disciplina funciona na vida real.',
+    videoUrl: '/videos/video2.mp4',
+    thumbnailUrl: '/videos/video2.jpg',
+    featured: true,
   },
-  {
-    id: '5',
-    title: 'Passo a passo: fazendo miojo gourmet com status de MasterChef',
-    brand: 'Maggi',
-    category: 'Tutorial',
-    description: 'Gastronomia caótica com direito a pitada de drama e muita risada na cozinha às 3h da manhã.',
-    videoUrl: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4',
-    thumbnailUrl: 'https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?q=80&w=800&auto=format&fit=crop',
-    views: '670K views',
-    featured: false,
-  },
-  {
-    id: '6',
-    title: 'Testando Airfryer de 8 em 1 que assa até os meus sentimentos',
-    brand: 'Polishop / Casa',
-    category: 'Review',
-    description: 'Colocando a airfryer à prova com receitas improváveis e comentários ácidos.',
-    videoUrl: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/SubaruOutbackSeeTheWorld.mp4',
-    thumbnailUrl: 'https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?q=80&w=800&auto=format&fit=crop',
-    views: '1.5M views',
-    featured: false,
-  }
 ];
 
 export const TESTIMONIALS = [
@@ -100,13 +54,11 @@ export const TESTIMONIALS = [
   }
 ];
 
-export const BRANDS = [
-  { name: "Nubank", logo: "⚡ Nubank" },
-  { name: "Sephora", logo: "💄 Sephora" },
-  { name: "Shopee", logo: "🛍️ Shopee" },
-  { name: "Maggi", logo: "🍲 Maggi" },
-  { name: "Ifood", logo: "🍔 iFood" },
-  { name: "Netflix", logo: "🍿 Netflix" },
+// Para mostrar a logo, coloque o arquivo em /public/marcas e preencha "logo".
+export const BRANDS: { name: string; logo?: string }[] = [
+  { name: "Fluencify" },
+  { name: "Sleep Cycle" },
+  { name: "Soundscape" },
 ];
 
 export const FUN_FACTS = [

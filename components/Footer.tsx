@@ -57,7 +57,7 @@ export default function Footer() {
                 WhatsApp (16) 99378-2499
               </a>
               <a
-                href="https://instagram.com"
+                href="https://instagram.com/thamiscreator"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 hover:text-[#FB58A7] transition-colors"
@@ -68,16 +68,16 @@ export default function Footer() {
                   <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
                   <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/>
                 </svg>
-                Instagram @tamiris.ugc
+                Instagram @thamiscreator
               </a>
               <a
-                href="https://tiktok.com"
+                href="https://www.tiktok.com/@thamiscreator0"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 hover:text-[#F4B6DF] transition-colors"
               >
                 <Send className="w-4 h-4 text-[#F4B6DF]" />
-                TikTok @tamiris.humor
+                TikTok @thamiscreator0
               </a>
             </div>
           </div>

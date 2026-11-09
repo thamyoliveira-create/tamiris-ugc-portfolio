@@ -26,7 +26,7 @@ export default function SobrePage() {
               <div className="relative w-80 h-[460px] sm:w-96 sm:h-[520px] rounded-3xl overflow-hidden p-3 bg-marca shadow-2xl rotate-[-2deg] hover:rotate-0 transition-transform duration-500">
                 <div className="relative w-full h-full rounded-2xl overflow-hidden bg-[#1A0F1C]">
                   <Image
-                    src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=1000&auto=format&fit=crop"
+                    src="/fotos/tamiris-2.jpg"
                     alt="Tamiris UGC Creator"
                     fill
                     className="object-cover"
