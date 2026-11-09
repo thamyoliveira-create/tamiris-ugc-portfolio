@@ -43,6 +43,8 @@ export default function ComoTrabalhoPage() {
   const packages = [
     {
       name: "Roteiro Autoral",
+      price: "R$ 80",
+      unit: "por roteiro",
       tag: "Para quem grava em casa",
       desc: "Roteiro completo de vídeo curto (Reels/TikTok) com ganchos, cenas, falas e referências de atuação.",
       features: [
@@ -56,6 +58,8 @@ export default function ComoTrabalhoPage() {
     },
     {
       name: "Vídeo UGC Individual",
+      price: "R$ 200",
+      unit: "por vídeo",
       tag: "Mais pedido 🔥",
       desc: "Produção completa: do roteiro à entrega do vídeo editado pronto para rodar como anúncio ou post orgânico.",
       features: [
@@ -70,8 +74,10 @@ export default function ComoTrabalhoPage() {
     },
     {
       name: "Pacote de Vídeos",
+      price: "R$ 500",
+      unit: "3 vídeos",
       tag: "Melhor Custo x Benefício",
-      desc: "Combo de 3 a 5 vídeos para testes A/B de criativos, com diferentes ganchos e ângulos de abordagem.",
+      desc: "Combo de 3 vídeos para testes A/B de criativos, com diferentes ganchos e ângulos de abordagem.",
       features: [
         "Variação de hooks para teste",
         "Cronograma quinzenal ou mensal",
@@ -181,6 +187,10 @@ export default function ComoTrabalhoPage() {
                       {pkg.tag}
                     </span>
                     <h3 className="text-2xl font-black text-[#FFF5FB]">{pkg.name}</h3>
+                    <p className="flex items-baseline gap-2">
+                      <span className="text-4xl font-black text-[#03E39D]">{pkg.price}</span>
+                      <span className="font-mono text-xs text-[#F4B6DF]">{pkg.unit}</span>
+                    </p>
                     <p className="text-[#FFF5FB]/80 text-sm leading-relaxed">{pkg.desc}</p>
 
                     <div className="pt-4 border-t border-[#FFF5FB]/10 space-y-3">
