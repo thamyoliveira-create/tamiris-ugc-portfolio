@@ -50,15 +50,6 @@ export const VIDEOS: VideoItem[] = [
     thumbnailUrl: '/videos/video4.jpg',
   },
   {
-    id: '5',
-    title: 'Criando meu site no meio da rotina',
-    brand: 'Sites para empreendedores',
-    category: 'Humor',
-    description: 'Vida real de quem empreende: notebook, garrafinha e um site saindo do papel.',
-    videoUrl: '/videos/video5.mp4',
-    thumbnailUrl: '/videos/video5.jpg',
-  },
-  {
     id: '6',
     title: '10/10 websites for entrepreneurs',
     brand: 'Sites para empreendedores',
