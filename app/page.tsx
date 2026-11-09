@@ -8,11 +8,11 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import WhatsAppFloat from '@/components/WhatsAppFloat';
 import VideoModal from '@/components/VideoModal';
+import VideoMarquee from '@/components/VideoMarquee';
 import { VIDEOS, BRANDS, VideoItem } from '@/data/videos';
 
 export default function Home() {
   const [selectedVideo, setSelectedVideo] = useState<VideoItem | null>(null);
-  const featuredVideos = VIDEOS.filter(v => v.featured);
 
   return (
     <div className="min-h-screen flex flex-col bg-[#FFF5FB] text-[#1A0F1C]">
@@ -103,7 +103,8 @@ export default function Home() {
         </section>
 
         {/* FEATURED VIDEOS SECTION */}
-        <section className="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        <section className="py-20">
+          <div className="px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
           <div className="flex flex-col md:flex-row md:items-end justify-between mb-12">
             <div>
               <span className="font-mono text-xs text-[#C01A6E] font-bold uppercase tracking-wider bg-[#F4B6DF] px-3 py-1 rounded-full">
@@ -121,50 +122,8 @@ export default function Home() {
             </Link>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {featuredVideos.map((video) => (
-              <div
-                key={video.id}
-                onClick={() => setSelectedVideo(video)}
-                className="group bg-[#FFF5FB] rounded-3xl overflow-hidden shadow-lg border-2 border-[#F4B6DF] hover:border-[#FB58A7] transition-all duration-300 cursor-pointer flex flex-col transform hover:-translate-y-2"
-              >
-                {/* Thumbnail 9:16 */}
-                <div className="relative aspect-[9/16] bg-[#1A0F1C] overflow-hidden">
-                  <Image
-                    src={video.thumbnailUrl}
-                    alt={video.title}
-                    fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-500 opacity-90 group-hover:opacity-100"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#1A0F1C]/80 via-transparent to-transparent flex items-end p-6">
-                    <div className="absolute top-4 left-4">
-                      <span className="font-mono text-xs bg-[#03E39D] text-[#1A0F1C] px-3 py-1 rounded-full font-bold uppercase shadow-md">
-                        {video.category}
-                      </span>
-                    </div>
-                    <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity bg-[#1A0F1C]/40">
-                      <div className="w-16 h-16 rounded-full bg-marca flex items-center justify-center shadow-xl">
-                        <Play className="w-8 h-8 text-[#1A0F1C] fill-current ml-1" />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="p-6 flex-1 flex flex-col justify-between space-y-4">
-                  <div className="space-y-2">
-                    <span className="font-mono text-xs text-[#C01A6E] font-semibold">{video.brand}</span>
-                    <h3 className="text-xl font-bold text-[#1A0F1C] group-hover:text-[#C01A6E] transition-colors leading-snug">
-                      {video.title}
-                    </h3>
-                  </div>
-                  <div className="flex items-center justify-between text-xs font-mono text-[#1A0F1C]/60 pt-4 border-t border-[#F4B6DF]">
-                    <span>{video.views}</span>
-                    <span className="text-[#00795A] font-bold flex items-center gap-1">Assistir <ArrowRight className="w-3.5 h-3.5" /></span>
-                  </div>
-                </div>
-              </div>
-            ))}
           </div>
+          <VideoMarquee videos={VIDEOS} onSelect={setSelectedVideo} />
         </section>
 
         {/* CTA FINAL SECTION */}

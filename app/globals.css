@@ -40,3 +40,22 @@ body {
   background: #FB58A7;
   border-radius: 4px;
 }
+
+/* Carrossel de vídeos */
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(calc(-50% - 0.75rem)); }
+}
+.marquee-track {
+  animation: marquee 40s linear infinite;
+}
+.marquee-mask:hover .marquee-track {
+  animation-play-state: paused;
+}
+.marquee-mask {
+  mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent);
+}
+@media (prefers-reduced-motion: reduce) {
+  .marquee-track { animation: none; }
+  .marquee-mask { overflow-x: auto; }
+}
