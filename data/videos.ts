@@ -86,6 +86,7 @@ export const BRANDS: { name: string; logo?: string }[] = [
   { name: "Fluencify" },
   { name: "Sleep Cycle" },
   { name: "Soundscape" },
+  { name: "GoDaddy" },
 ];
 
 export const FUN_FACTS = [
