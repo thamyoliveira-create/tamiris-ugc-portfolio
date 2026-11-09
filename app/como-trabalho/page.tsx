@@ -13,14 +13,14 @@ export default function ComoTrabalhoPage() {
     {
       number: "01",
       title: "Briefing & Ideação",
-      description: "Entendo seu produto, objetivos da campanha, público-alvo e os principais pontos de dor. Aqui alinhamos as ideias malucas e o direcionamento cômico.",
+      description: "Leio o briefing da sua marca com atenção: produto, objetivo, público, mensagens obrigatórias e o que não pode aparecer. Tudo isso é seguido à risca no vídeo.",
       icon: ClipboardList,
       color: "border-[#03E39D]"
     },
     {
       number: "02",
       title: "Roteiro & Aprovação",
-      description: "Escrevo um roteiro com a minha cara, do jeito que eu falaria do produto pra uma amiga. Você aprova antes de eu gravar.",
+      description: "Escrevo o roteiro seguindo o briefing, mas com o meu jeito de falar, pra não soar como comercial. Você aprova antes de eu gravar.",
       icon: FileText,
       color: "border-[#FB58A7]"
     },

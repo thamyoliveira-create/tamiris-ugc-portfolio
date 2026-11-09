@@ -58,7 +58,7 @@ export default function SobrePage() {
                   Comecei gravando por diversão, falando dos perrengues que todo mundo passa. Aí percebi que as pessoas se viam nos meus vídeos, e é esse o ponto: quem me assiste confia porque se reconhece.
                 </p>
                 <p>
-                  Só falo de produto que eu usaria de verdade. Se entrou no meu vídeo, é porque entrou na minha rotina.
+                  Só falo de produto que eu usaria de verdade. E quando fecho uma parceria, sigo o briefing da marca direitinho, só que contando do meu jeito, pra continuar soando natural.
                 </p>
               </div>
 
