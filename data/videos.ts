@@ -52,7 +52,7 @@ export const VIDEOS: VideoItem[] = [
   {
     id: '6',
     title: '10/10 websites for entrepreneurs',
-    brand: 'Sites para empreendedores',
+    brand: 'GoDaddy',
     category: 'Review',
     description: 'Lista rápida e divertida de sites que salvam a vida de quem empreende.',
     videoUrl: '/videos/video6.mp4',
@@ -83,10 +83,10 @@ export const TESTIMONIALS = [
 
 // Para mostrar a logo, coloque o arquivo em /public/marcas e preencha "logo".
 export const BRANDS: { name: string; logo?: string }[] = [
-  { name: "Fluencify" },
-  { name: "Sleep Cycle" },
+  { name: "Fluencify", logo: "https://www.google.com/s2/favicons?domain=fluencify.io&sz=128" },
+  { name: "Sleep Cycle", logo: "https://www.google.com/s2/favicons?domain=sleepcycle.com&sz=128" },
   { name: "Soundscape" },
-  { name: "GoDaddy" },
+  { name: "GoDaddy", logo: "https://www.google.com/s2/favicons?domain=godaddy.com&sz=128" },
 ];
 
 export const FUN_FACTS = [

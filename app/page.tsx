@@ -90,7 +90,8 @@ export default function Home() {
               {BRANDS.map((b, i) => (
                 <div key={i} className="flex items-center gap-3 text-xl sm:text-2xl font-black tracking-tight text-[#FFF5FB] hover:text-[#03E39D] transition-colors">
                   {b.logo ? (
-                    <Image src={b.logo} alt={`Logo ${b.name}`} width={44} height={44} className="h-11 w-11 rounded-xl object-contain bg-white p-1" />
+                    // eslint-disable-next-line @next/next/no-img-element
+                    <img src={b.logo} alt={`Logo ${b.name}`} width={44} height={44} className="h-11 w-11 rounded-xl object-contain bg-white p-1" />
                   ) : (
                     <span className="h-11 w-11 rounded-xl bg-marca text-[#1A0F1C] flex items-center justify-center text-lg">{b.name[0]}</span>
                   )}
