@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <defs>
+    <linearGradient id="animGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#03E39D">
+        <animate attributeName="stop-color" values="#03E39D;#FB58A7;#F4B6DF;#03E39D" dur="6s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="50%" stop-color="#FB58A7">
+        <animate attributeName="stop-color" values="#FB58A7;#F4B6DF;#03E39D;#FB58A7" dur="6s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="100%" stop-color="#F4B6DF">
+        <animate attributeName="stop-color" values="#F4B6DF;#03E39D;#FB58A7;#F4B6DF" dur="6s" repeatCount="indefinite" />
+      </stop>
+    </linearGradient>
+  </defs>
+  <circle cx="60" cy="60" r="50" fill="url(#animGrad)">
+    <animate attributeName="r" values="46;52;46" dur="3s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="60" cy="60" r="38" fill="#1A0F1C" />
+  <text x="60" y="70" font-family="Figtree, sans-serif" font-weight="900" font-size="46" fill="url(#animGrad)" text-anchor="middle">T</text>
+</svg>

@@ -1,69 +1,241 @@
-import Image from "next/image";
+'use client';
+
+import React, { useState } from 'react';
+import Link from 'next/link';
+import Image from 'next/image';
+import { Play, Sparkles, MessageCircle, ArrowRight, Star, CheckCircle2, Flame } from 'lucide-react';
+import Navbar from '@/components/Navbar';
+import Footer from '@/components/Footer';
+import WhatsAppFloat from '@/components/WhatsAppFloat';
+import VideoModal from '@/components/VideoModal';
+import { VIDEOS, TESTIMONIALS, BRANDS, VideoItem } from '@/data/videos';
 
 export default function Home() {
+  const [selectedVideo, setSelectedVideo] = useState<VideoItem | null>(null);
+  const featuredVideos = VIDEOS.filter(v => v.featured);
+
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert h-5 w-[100px]"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the{" "}
-            <code className="rounded bg-black/[.06] px-1.5 py-0.5 font-mono text-[0.9em] dark:bg-white/[.08]">
-              page.tsx
-            </code>{" "}
-            file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
+    <div className="min-h-screen flex flex-col bg-[#FFF5FB] text-[#1A0F1C]">
+      <Navbar />
+
+      <main className="flex-1">
+        {/* HERO SECTION */}
+        <section className="relative overflow-hidden pt-16 pb-24 lg:pt-24 lg:pb-32 bg-[#FFF5FB] border-b border-[#F4B6DF]/40">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+              <div className="lg:col-span-7 space-y-6 text-center lg:text-left">
+                <div className="inline-flex items-center gap-2 bg-[#F4B6DF]/50 px-4 py-2 rounded-full border border-[#FB58A7]/30">
+                  <Flame className="w-4 h-4 text-[#C01A6E]" />
+                  <span className="font-mono text-xs font-bold text-[#C01A6E] tracking-wide uppercase">
+                    UGC com Humor & Realidade
+                  </span>
+                </div>
+
+                <h1 className="text-4xl sm:text-6xl lg:text-7xl font-black leading-tight tracking-tight text-[#1A0F1C]">
+                  Sua marca precisa de <span className="text-gradient">engajamento real</span>, não de robô.
+                </h1>
+
+                <p className="text-lg sm:text-xl text-[#1A0F1C]/80 max-w-2xl mx-auto lg:mx-0 leading-relaxed font-normal">
+                  Oi! Eu sou a Tamiris. Crio vídeos UGC hilários e cheios de verdade que fazem seu público parar o feed e comprar o seu produto rindo.
+                </p>
+
+                <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4">
+                  <Link
+                    href="/videos"
+                    className="w-full sm:w-auto bg-marca text-[#1A0F1C] font-extrabold px-8 py-4 rounded-full shadow-lg hover:opacity-95 transition-all transform hover:scale-105 flex items-center justify-center gap-2 text-base"
+                  >
+                    <Play className="w-5 h-5 fill-current" />
+                    Ver vídeos
+                  </Link>
+                  <Link
+                    href="/contato"
+                    className="w-full sm:w-auto border-2 border-[#1A0F1C] text-[#1A0F1C] font-extrabold px-8 py-4 rounded-full hover:bg-[#1A0F1C] hover:text-[#FFF5FB] transition-all flex items-center justify-center gap-2 text-base"
+                  >
+                    <MessageCircle className="w-5 h-5" />
+                    Bora conversar
+                  </Link>
+                </div>
+
+                <div className="pt-6 flex items-center justify-center lg:justify-start gap-6 text-xs font-mono text-[#00795A]">
+                  <span className="flex items-center gap-1.5"><CheckCircle2 className="w-4 h-4 text-[#03E39D]" /> +50 marcas atendidas</span>
+                  <span className="flex items-center gap-1.5"><CheckCircle2 className="w-4 h-4 text-[#03E39D]" /> Roteiro 100% autoral</span>
+                </div>
+              </div>
+
+              {/* Hero Animated Svg / Visual */}
+              <div className="lg:col-span-5 flex justify-center">
+                <div className="relative w-72 h-72 sm:w-96 sm:h-96 bg-marca rounded-3xl p-3 shadow-2xl flex items-center justify-center rotate-3 hover:rotate-0 transition-transform duration-500">
+                  <div className="w-full h-full bg-[#1A0F1C] rounded-2xl flex flex-col items-center justify-center p-8 text-center relative overflow-hidden">
+                    <div className="absolute top-0 right-0 transform translate-x-4 -translate-y-4 w-24 h-24 bg-[#03E39D]/20 rounded-full blur-xl" />
+                    <Image
+                      src="/marca/marca-animada.svg"
+                      alt="Tamiris Marca Animada"
+                      width={120}
+                      height={120}
+                      className="mb-4 animate-bounce"
+                    />
+                    <h3 className="text-xl font-black text-[#FFF5FB]">Tamiris UGC</h3>
+                    <p className="text-xs text-[#F4B6DF] font-mono mt-1">Humor que converte</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* BRANDS TICKER / SECTION */}
+        <section className="bg-[#1A0F1C] text-[#FFF5FB] py-12 border-y border-[#FB58A7]/20">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6">
+            <p className="font-mono text-xs uppercase tracking-widest text-[#FB58A7]">
+              Marcas que já confiaram no meu humor caótico
+            </p>
+            <div className="flex flex-wrap items-center justify-center gap-8 sm:gap-16 opacity-90">
+              {BRANDS.map((b, i) => (
+                <div key={i} className="text-xl sm:text-2xl font-black tracking-tight text-[#FFF5FB] hover:text-[#03E39D] transition-colors">
+                  {b.logo}
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* FEATURED VIDEOS SECTION */}
+        <section className="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+          <div className="flex flex-col md:flex-row md:items-end justify-between mb-12">
+            <div>
+              <span className="font-mono text-xs text-[#C01A6E] font-bold uppercase tracking-wider bg-[#F4B6DF] px-3 py-1 rounded-full">
+                Vitrine de Sucesso
+              </span>
+              <h2 className="text-3xl sm:text-5xl font-black text-[#1A0F1C] mt-3">
+                Vídeos que <span className="text-gradient">param o feed</span>
+              </h2>
+            </div>
+            <Link
+              href="/videos"
+              className="mt-4 md:mt-0 font-extrabold text-[#C01A6E] hover:text-[#1A0F1C] flex items-center gap-2 transition-colors group"
             >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert h-[14px] w-4"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={14}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
+              Ver todos os vídeos <ArrowRight className="w-5 h-5 transform group-hover:translate-x-1 transition-transform" />
+            </Link>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {featuredVideos.map((video) => (
+              <div
+                key={video.id}
+                onClick={() => setSelectedVideo(video)}
+                className="group bg-[#FFF5FB] rounded-3xl overflow-hidden shadow-lg border-2 border-[#F4B6DF] hover:border-[#FB58A7] transition-all duration-300 cursor-pointer flex flex-col transform hover:-translate-y-2"
+              >
+                {/* Thumbnail 9:16 */}
+                <div className="relative aspect-[9/16] bg-[#1A0F1C] overflow-hidden">
+                  <Image
+                    src={video.thumbnailUrl}
+                    alt={video.title}
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-500 opacity-90 group-hover:opacity-100"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#1A0F1C]/80 via-transparent to-transparent flex items-end p-6">
+                    <div className="absolute top-4 left-4">
+                      <span className="font-mono text-xs bg-[#03E39D] text-[#1A0F1C] px-3 py-1 rounded-full font-bold uppercase shadow-md">
+                        {video.category}
+                      </span>
+                    </div>
+                    <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity bg-[#1A0F1C]/40">
+                      <div className="w-16 h-16 rounded-full bg-marca flex items-center justify-center shadow-xl">
+                        <Play className="w-8 h-8 text-[#1A0F1C] fill-current ml-1" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="p-6 flex-1 flex flex-col justify-between space-y-4">
+                  <div className="space-y-2">
+                    <span className="font-mono text-xs text-[#C01A6E] font-semibold">{video.brand}</span>
+                    <h3 className="text-xl font-bold text-[#1A0F1C] group-hover:text-[#C01A6E] transition-colors leading-snug">
+                      {video.title}
+                    </h3>
+                  </div>
+                  <div className="flex items-center justify-between text-xs font-mono text-[#1A0F1C]/60 pt-4 border-t border-[#F4B6DF]">
+                    <span>{video.views}</span>
+                    <span className="text-[#00795A] font-bold flex items-center gap-1">Assistir <ArrowRight className="w-3.5 h-3.5" /></span>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        {/* TESTIMONIALS SECTION (Dark background for rhythm alternation) */}
+        <section className="py-24 bg-[#1A0F1C] text-[#FFF5FB] relative overflow-hidden">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div className="text-center max-w-2xl mx-auto space-y-4 mb-16">
+              <span className="font-mono text-xs text-[#03E39D] uppercase tracking-wider bg-[#03E39D]/10 px-3 py-1 rounded-full border border-[#03E39D]/30">
+                Depoimentos
+              </span>
+              <h2 className="text-3xl sm:text-5xl font-black">
+                O que dizem as marcas que <span className="text-[#03E39D]">já lucraram rindo</span>
+              </h2>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              {TESTIMONIALS.map((t, idx) => (
+                <div
+                  key={idx}
+                  className="bg-[#241528] p-8 rounded-3xl border border-[#FB58A7]/20 flex flex-col justify-between space-y-6 shadow-xl hover:border-[#03E39D] transition-colors"
+                >
+                  <div className="space-y-4">
+                    <div className="flex text-[#FB58A7]">
+                      {[...Array(5)].map((_, i) => (
+                        <Star key={i} className="w-5 h-5 fill-current" />
+                      ))}
+                    </div>
+                    <p className="text-[#FFF5FB]/90 text-base italic leading-relaxed">
+                      &quot;{t.quote}&quot;
+                    </p>
+                  </div>
+
+                  <div className="flex items-center gap-4 pt-4 border-t border-[#FFF5FB]/10">
+                    <div className="relative w-12 h-12 rounded-full overflow-hidden border-2 border-[#03E39D]">
+                      <Image src={t.avatar} alt={t.author} fill className="object-cover" />
+                    </div>
+                    <div>
+                      <h4 className="font-bold text-sm text-[#FFF5FB]">{t.author}</h4>
+                      <p className="text-xs font-mono text-[#F4B6DF]">{t.role}</p>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* CTA FINAL SECTION */}
+        <section className="py-24 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto text-center">
+          <div className="bg-marca p-10 sm:p-16 rounded-3xl shadow-2xl relative overflow-hidden space-y-6">
+            <div className="absolute -top-12 -left-12 w-40 h-40 bg-white/20 rounded-full blur-2xl" />
+            <h2 className="text-3xl sm:text-5xl font-black text-[#1A0F1C] tracking-tight">
+              Pronto para transformar seu produto em meme (do bem) e vender mais?
+            </h2>
+            <p className="text-lg text-[#1A0F1C]/90 max-w-2xl mx-auto font-medium">
+              Vamos conversar sobre o briefing da sua próxima campanha. Sem burocracia, direto pelo WhatsApp!
+            </p>
+            <div className="pt-4">
+              <Link
+                href="/contato"
+                className="inline-flex items-center gap-3 bg-[#1A0F1C] text-[#FFF5FB] font-extrabold px-10 py-5 rounded-full shadow-2xl hover:bg-[#241528] transition-all transform hover:scale-105 text-lg"
+              >
+                <MessageCircle className="w-6 h-6 text-[#03E39D]" />
+                Bora fazer história juntas?
+              </Link>
+            </div>
+          </div>
+        </section>
       </main>
+
+      <Footer />
+      <WhatsAppFloat />
+
+      {/* Video Modal */}
+      <VideoModal video={selectedVideo} onClose={() => setSelectedVideo(null)} />
     </div>
   );
 }

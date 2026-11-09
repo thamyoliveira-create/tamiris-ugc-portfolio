@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 60" width="240" height="60">
+  <defs>
+    <linearGradient id="gradMarca" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#03E39D" />
+      <stop offset="58%" stop-color="#FB58A7" />
+      <stop offset="100%" stop-color="#F4B6DF" />
+    </linearGradient>
+  </defs>
+  <circle cx="30" cy="30" r="22" fill="url(#gradMarca)" />
+  <text x="30" y="37" font-family="Figtree, sans-serif" font-weight="900" font-size="22" fill="#1A0F1C" text-anchor="middle">T</text>
+  <text x="65" y="38" font-family="Figtree, sans-serif" font-weight="800" font-size="24" fill="#FFF5FB">Tamiris<tspan fill="#03E39D">.UGC</tspan></text>
+</svg>
