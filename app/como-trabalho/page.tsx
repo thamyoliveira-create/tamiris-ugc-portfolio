@@ -42,9 +42,10 @@ export default function ComoTrabalhoPage() {
 
   const equipment = [
     { icon: Smartphone, name: "iPhone 16", desc: "Grava tudo em vertical, com imagem bonita e nítida." },
-    { icon: Mic, name: "Microfone de lapela", desc: "Pra voz sair limpa, sem eco de quarto." },
+    { icon: Mic, name: "Microfone de lapela sem fio", desc: "Kaidi com 2 microfones, pra voz sair limpa e dar pra gravar em dupla." },
     { icon: Aperture, name: "Tripé com ring light", desc: "Celular firme e rosto bem iluminado." },
-    { icon: Lightbulb, name: "Luz de iluminação", desc: "Ajuda quando a luz natural não colabora." },
+    { icon: Lightbulb, name: "Luz LED portátil", desc: "Encaixa no celular e salva quando a luz natural não colabora." },
+    { icon: Sparkles, name: "Luminária de efeito colorido", desc: "Dá aquele clima de cor no fundo, tipo pôr do sol ou neon." },
     { icon: Laptop, name: "MacBook", desc: "Onde eu edito, organizo e entrego os arquivos." },
     { icon: Tablet, name: "iPad Pro", desc: "Pra roteiro, teleprompter e edição rápida." },
   ];
