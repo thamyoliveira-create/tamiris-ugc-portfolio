@@ -47,7 +47,7 @@ export default function ComoTrabalhoPage() {
     { icon: Aperture, name: "Tripé com ring light", desc: "Celular firme e rosto bem iluminado.", photo: "/equipamento/tripe.jpg" },
     { icon: Lightbulb, name: "Luz LED portátil", desc: "Encaixa no celular e salva quando a luz natural não colabora.", photo: "/equipamento/luz-led.jpg" },
     { icon: Sparkles, name: "Luminária de efeito colorido", desc: "Dá aquele clima de cor no fundo, tipo pôr do sol ou neon.", photo: "/equipamento/luminaria.jpg" },
-    { icon: Laptop, name: "MacBook", desc: "Onde eu edito, organizo e entrego os arquivos." },
+    { icon: Laptop, name: "MacBook", desc: "Onde eu edito, organizo e entrego os arquivos.", photo: "/equipamento/macbook.jpg" },
     { icon: Tablet, name: "iPad Pro", desc: "Pra roteiro, teleprompter e edição rápida.", photo: "/equipamento/ipad.jpg" },
   ];
 
