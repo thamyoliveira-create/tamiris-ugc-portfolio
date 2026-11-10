@@ -1,11 +1,11 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { MessageCircle, Sparkles, Heart, Coffee, Laugh, CheckCircle2 } from 'lucide-react';
+import { MessageCircle, Sparkles, Heart, Laugh } from 'lucide-react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import WhatsAppFloat from '@/components/WhatsAppFloat';
-import { FUN_FACTS } from '@/data/videos';
+import { } from '@/data/videos';
 
 export const metadata = {
   title: "Sobre a Tamiris | Humor & Vida Real UGC",
@@ -77,40 +77,6 @@ export default function SobrePage() {
                   Ver meus vídeos
                 </Link>
               </div>
-            </div>
-          </div>
-        </section>
-
-        {/* RANDOM FUN FACTS SECTION (Dark Plum Background for contrast) */}
-        <section className="py-24 bg-[#1A0F1C] text-[#FFF5FB] relative overflow-hidden">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <div className="text-center max-w-2xl mx-auto space-y-4 mb-16">
-              <span className="font-mono text-xs text-[#03E39D] uppercase tracking-wider bg-[#03E39D]/10 px-3 py-1 rounded-full border border-[#03E39D]/30">
-                Vida Real
-              </span>
-              <h2 className="text-3xl sm:text-5xl font-black">
-                Fatos 100% Aleatórios <span className="text-[#FB58A7]">sobre mim</span>
-              </h2>
-              <p className="text-[#FFF5FB]/70 text-sm sm:text-base">
-                Para você me conhecer além dos 60 segundos de tela.
-              </p>
-            </div>
-
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-              {FUN_FACTS.map((fact, index) => (
-                <div
-                  key={index}
-                  className={`${fact.color} p-8 rounded-3xl shadow-xl flex flex-col justify-between space-y-4 transform hover:-translate-y-2 transition-all duration-300`}
-                >
-                  <h3 className="text-xl font-black">{fact.title}</h3>
-                  <p className="text-sm font-semibold opacity-90 leading-relaxed">
-                    {fact.text}
-                  </p>
-                  <div className="pt-2 flex justify-end opacity-50">
-                    <Sparkles className="w-6 h-6" />
-                  </div>
-                </div>
-              ))}
             </div>
           </div>
         </section>

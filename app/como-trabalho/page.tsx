@@ -57,11 +57,10 @@ export default function ComoTrabalhoPage() {
       price: "R$ 80",
       unit: "por roteiro",
       tag: "Para quem grava em casa",
-      desc: "Roteiro completo de vídeo curto (Reels/TikTok) com ganchos, cenas, falas e referências de atuação.",
+      desc: "Só o roteiro, pra quem já tem quem grave.",
       features: [
-        "2 opções de ganchos (hooks)",
-        "Direcionamento de atuação cômica",
-        "Sugestão de trilha e sonoplastia",
+        "2 opções de começo pro vídeo",
+        "Indicação de cenas e falas",
         "1 rodada de ajustes"
       ],
       cta: "Quero roteiros",
@@ -72,12 +71,10 @@ export default function ComoTrabalhoPage() {
       price: "R$ 200",
       unit: "por vídeo",
       tag: "Mais pedido 🔥",
-      desc: "Produção completa: do roteiro à entrega do vídeo editado pronto para rodar como anúncio ou post orgânico.",
+      desc: "Do roteiro ao vídeo editado, pronto pra postar.",
       features: [
-        "Roteiro exclusivo e autoral",
-        "Gravação em alta qualidade 9:16",
-        "Edição dinâmica com legendas",
-        "Direitos de uso inclusos",
+        "Roteiro seguindo o briefing",
+        "Gravação e edição com legendas",
         "Até 2 rodadas de ajustes"
       ],
       cta: "Pedir 1 vídeo",
@@ -88,13 +85,11 @@ export default function ComoTrabalhoPage() {
       price: "R$ 500",
       unit: "3 vídeos",
       tag: "Melhor Custo x Benefício",
-      desc: "Combo de 3 vídeos para testes A/B de criativos, com diferentes ganchos e ângulos de abordagem.",
+      desc: "Três vídeos pra marca testar ângulos diferentes.",
       features: [
-        "Variação de hooks para teste",
-        "Cronograma quinzenal ou mensal",
-        "Desconto progressivo por volume",
-        "Prioridade na fila de gravação",
-        "Relatório de impressões e dicas"
+        "3 vídeos com abordagens diferentes",
+        "Bom pra testar o que funciona melhor",
+        "Até 2 rodadas de ajustes por vídeo"
       ],
       cta: "Pedir pacote",
       highlight: false
