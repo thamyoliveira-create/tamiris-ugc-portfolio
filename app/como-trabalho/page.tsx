@@ -1,6 +1,7 @@
 'use client';
 import React, { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { ClipboardList, FileText, Video, Sparkles, ChevronDown, Check, ArrowRight, MessageCircle, Smartphone, Laptop, Tablet, Mic, Lightbulb, Aperture } from 'lucide-react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
@@ -40,12 +41,12 @@ export default function ComoTrabalhoPage() {
     }
   ];
 
-  const equipment = [
+  const equipment: { icon: React.ElementType; name: string; desc: string; photo?: string }[] = [
     { icon: Smartphone, name: "iPhone 16", desc: "Grava tudo em vertical, com imagem bonita e nítida." },
-    { icon: Mic, name: "Microfone de lapela sem fio", desc: "Kaidi com 2 microfones, pra voz sair limpa e dar pra gravar em dupla." },
+    { icon: Mic, name: "Microfone de lapela sem fio", desc: "Kaidi com 2 microfones, pra voz sair limpa e dar pra gravar em dupla.", photo: "/equipamento/microfone.jpg" },
     { icon: Aperture, name: "Tripé com ring light", desc: "Celular firme e rosto bem iluminado." },
-    { icon: Lightbulb, name: "Luz LED portátil", desc: "Encaixa no celular e salva quando a luz natural não colabora." },
-    { icon: Sparkles, name: "Luminária de efeito colorido", desc: "Dá aquele clima de cor no fundo, tipo pôr do sol ou neon." },
+    { icon: Lightbulb, name: "Luz LED portátil", desc: "Encaixa no celular e salva quando a luz natural não colabora.", photo: "/equipamento/luz-led.jpg" },
+    { icon: Sparkles, name: "Luminária de efeito colorido", desc: "Dá aquele clima de cor no fundo, tipo pôr do sol ou neon.", photo: "/equipamento/luminaria.jpg" },
     { icon: Laptop, name: "MacBook", desc: "Onde eu edito, organizo e entrego os arquivos." },
     { icon: Tablet, name: "iPad Pro", desc: "Pra roteiro, teleprompter e edição rápida." },
   ];
@@ -182,13 +183,20 @@ export default function ComoTrabalhoPage() {
           </div>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
             {equipment.map((item) => (
-              <div key={item.name} className="bg-[#FFF5FB] border-2 border-[#F4B6DF] rounded-2xl p-5 flex gap-4 items-start">
+              <div key={item.name} className="bg-[#FFF5FB] border-2 border-[#F4B6DF] rounded-2xl overflow-hidden">
+                {item.photo && (
+                  <div className="relative aspect-square">
+                    <Image src={item.photo} alt={item.name} fill sizes="(min-width: 768px) 33vw, 50vw" className="object-cover" />
+                  </div>
+                )}
+                <div className="p-5 flex gap-4 items-start">
                 <div className="w-11 h-11 shrink-0 rounded-xl bg-marca flex items-center justify-center">
                   <item.icon className="w-5 h-5 text-[#1A0F1C]" />
                 </div>
                 <div>
                   <h3 className="font-bold text-[#1A0F1C]">{item.name}</h3>
                   <p className="text-sm text-[#1A0F1C]/70">{item.desc}</p>
+                </div>
                 </div>
               </div>
             ))}
