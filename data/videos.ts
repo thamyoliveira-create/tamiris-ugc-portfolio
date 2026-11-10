@@ -32,15 +32,6 @@ export const VIDEOS: VideoItem[] = [
     featured: true,
   },
   {
-    id: '3',
-    title: 'O que eu faria se começasse do zero hoje em conteúdo UGC?',
-    brand: 'Conteúdo UGC',
-    category: 'Tutorial',
-    description: 'Dicas sinceras pra quem quer começar no UGC, sem enrolação.',
-    videoUrl: '/videos/video3.mp4',
-    thumbnailUrl: '/videos/video3.jpg',
-  },
-  {
     id: '4',
     title: 'Ganhos com a Fluencify',
     brand: 'Fluencify',
