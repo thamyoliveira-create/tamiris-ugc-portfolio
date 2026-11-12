@@ -13,7 +13,7 @@ export default function VideoModal({ video, onClose }: VideoModalProps) {
   if (!video) return null;
 
   return (
-    <div className="fixed inset-0 z-50 bg-[#1A0F1C]/80 backdrop-blur-md flex items-center justify-center p-4 overflow-y-auto">
+    <div className="fixed inset-0 z-50 bg-[#1A0F1C]/90 flex items-center justify-center p-4 overflow-y-auto">
       <div className="bg-[#FFF5FB] rounded-3xl max-w-4xl w-full overflow-hidden shadow-2xl border-4 border-[#FB58A7] relative flex flex-col md:flex-row">
         {/* Close Button */}
         <button
@@ -26,13 +26,15 @@ export default function VideoModal({ video, onClose }: VideoModalProps) {
 
         {/* Left: Vertical Video player simulation / Video */}
         <div className="w-full md:w-1/2 bg-[#1A0F1C] flex items-center justify-center p-6 relative min-h-[450px]">
-          <div className="relative w-[240px] h-[426px] rounded-2xl overflow-hidden shadow-2xl border-2 border-[#03E39D]">
+          <div className="relative w-[240px] h-[426px] rounded-2xl overflow-hidden shadow-2xl border-2 border-[#03E39D] [transform:translateZ(0)]">
             <video
+              key={video.videoUrl}
               src={video.videoUrl}
               poster={video.thumbnailUrl}
               controls
               autoPlay
               playsInline
+              preload="metadata"
               className="w-full h-full object-cover"
             />
           </div>
