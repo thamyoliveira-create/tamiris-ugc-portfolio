@@ -54,7 +54,7 @@ export const VIDEOS: VideoItem[] = [
     title: 'De 922 views para 1,1 milhão',
     brand: 'Blow Up',
     category: 'Review',
-    description: 'Mostrando na real como o app me ajudou a sair de 922 views para 1,1 milhão.',
+    description: 'Comentando um vídeo que saiu de 922 views para 1,1 milhão e o que fez ele bombar, usando o Blow Up.',
     videoUrl: '/videos/video7.mp4',
     thumbnailUrl: '/videos/video7.jpg',
   },
