@@ -67,6 +67,15 @@ export const VIDEOS: VideoItem[] = [
     videoUrl: '/videos/video8.mp4',
     thumbnailUrl: '/videos/video8.jpg',
   },
+  {
+    id: '9',
+    title: 'Que porr* a minha IA tá falando??',
+    brand: 'Airlearn',
+    category: 'Humor',
+    description: 'Aprendendo inglês no iPad e rindo da pronúncia, do jeito que acontece de verdade.',
+    videoUrl: '/videos/video9.mp4',
+    thumbnailUrl: '/videos/video9.jpg',
+  },
 ];
 
 export const TESTIMONIALS = [
@@ -96,6 +105,7 @@ export const BRANDS: { name: string; logo?: string }[] = [
   { name: "Sleep Cycle", logo: "https://www.google.com/s2/favicons?domain=sleepcycle.com&sz=128" },
   { name: "Soundscape" },
   { name: "GoDaddy", logo: "https://www.google.com/s2/favicons?domain=godaddy.com&sz=128" },
+  { name: "Airlearn" },
 ];
 
 export const FUN_FACTS = [
