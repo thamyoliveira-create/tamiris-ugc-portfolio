@@ -52,7 +52,7 @@ export const VIDEOS: VideoItem[] = [
   {
     id: '7',
     title: 'De 922 views para 1,1 milhão',
-    brand: 'UGC',
+    brand: 'Blow Up',
     category: 'Humor',
     description: 'Reagindo do meu jeito quando um vídeo sai do nada e explode.',
     videoUrl: '/videos/video7.mp4',
@@ -106,6 +106,7 @@ export const BRANDS: { name: string; logo?: string }[] = [
   { name: "Soundscape" },
   { name: "GoDaddy", logo: "https://www.google.com/s2/favicons?domain=godaddy.com&sz=128" },
   { name: "Airlearn" },
+  { name: "Blow Up" },
 ];
 
 export const FUN_FACTS = [
