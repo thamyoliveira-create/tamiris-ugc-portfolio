@@ -49,6 +49,24 @@ export const VIDEOS: VideoItem[] = [
     videoUrl: '/videos/video6.mp4',
     thumbnailUrl: '/videos/video6.jpg',
   },
+  {
+    id: '7',
+    title: 'De 922 views para 1,1 milhão',
+    brand: 'UGC',
+    category: 'Humor',
+    description: 'Reagindo do meu jeito quando um vídeo sai do nada e explode.',
+    videoUrl: '/videos/video7.mp4',
+    thumbnailUrl: '/videos/video7.jpg',
+  },
+  {
+    id: '8',
+    title: 'Quando lembro que lençol existe',
+    brand: 'UGC',
+    category: 'Humor',
+    description: 'Respondendo comentário de toalha na cabeça, vida real sem cenário.',
+    videoUrl: '/videos/video8.mp4',
+    thumbnailUrl: '/videos/video8.jpg',
+  },
 ];
 
 export const TESTIMONIALS = [
