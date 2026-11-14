@@ -79,7 +79,7 @@ export const VIDEOS: VideoItem[] = [
   {
     id: '10',
     title: 'Meus queridinhos do banho',
-    brand: 'UGC',
+    brand: 'Muriel',
     category: 'Review',
     description: 'Mostrando os produtos de banho que eu uso de verdade, sabonete glicerinado, óleo de banho e mais, direto do meu banheiro.',
     videoUrl: '/videos/video10.mp4',
