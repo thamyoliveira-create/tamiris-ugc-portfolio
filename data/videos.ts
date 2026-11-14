@@ -130,4 +130,13 @@ export const FUN_FACTS = [
     text: "Corto silêncios mais rápido do que meu cérebro processa segunda-feira.",
     color: "bg-[#03E39D] text-[#1A0F1C]"
   }
+  {
+    id: '10',
+    title: 'Meus queridinhos do banho',
+    brand: 'UGC',
+    category: 'Review',
+    description: 'Mostrando os produtos de banho que eu uso de verdade, sabonete glicerinado, óleo de banho e mais, direto do meu banheiro.',
+    videoUrl: '/videos/video10.mp4',
+    thumbnailUrl: '/videos/video10.jpg',
+  },
 ];
