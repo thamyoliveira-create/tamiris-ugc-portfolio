@@ -59,3 +59,8 @@ body {
   .marquee-track { animation: none; }
   .marquee-mask { overflow-x: auto; }
 }
+
+/* esconde a barra do Google Tradutor */
+.goog-te-banner-frame, .skiptranslate iframe, #goog-gt-tt, .goog-te-balloon-frame { display: none !important; }
+body { top: 0 !important; }
+.goog-text-highlight { background: none !important; box-shadow: none !important; }

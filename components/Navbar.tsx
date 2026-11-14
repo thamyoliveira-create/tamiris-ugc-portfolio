@@ -5,6 +5,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import { Menu, X, MessageCircle } from 'lucide-react';
+import LangToggle from './LangToggle';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -52,7 +53,8 @@ export default function Navbar() {
         </nav>
 
         {/* Action Button */}
-        <div className="hidden md:flex items-center">
+        <div className="hidden md:flex items-center gap-3">
+          <LangToggle />
           <Link
             href="/contato"
             className="bg-marca text-[#1A0F1C] font-extrabold px-6 py-3 rounded-full shadow-md hover:opacity-95 transition-all transform hover:scale-105 flex items-center gap-2"
@@ -63,6 +65,8 @@ export default function Navbar() {
         </div>
 
         {/* Mobile Menu Button */}
+        <div className="md:hidden flex items-center gap-1">
+        <LangToggle />
         <button
           onClick={() => setIsOpen(!isOpen)}
           className="md:hidden text-[#1A0F1C] p-2 rounded-lg hover:bg-[#F4B6DF]/30 focus:outline-none"
@@ -70,6 +74,7 @@ export default function Navbar() {
         >
           {isOpen ? <X className="w-7 h-7" /> : <Menu className="w-7 h-7" />}
         </button>
+        </div>
       </div>
 
       {/* Mobile Dropdown */}

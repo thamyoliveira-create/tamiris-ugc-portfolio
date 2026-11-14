@@ -220,6 +220,9 @@ Mensagem: ${formData.message || 'Nenhuma mensagem adicional'}`;
               </p>
             </div>
           </form>
+          <p className="mt-6 text-center text-sm text-gray-600 relative z-10">
+            Prefere e-mail? <a href="mailto:thamiscreator0@gmail.com" className="font-bold text-[#C01A6E] underline">thamiscreator0@gmail.com</a>
+          </p>
         </div>
       </main>
 

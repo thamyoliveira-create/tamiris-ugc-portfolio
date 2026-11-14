@@ -3,7 +3,7 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { MessageCircle, Send, Heart } from 'lucide-react';
+import { MessageCircle, Send, Heart, Mail } from 'lucide-react';
 
 export default function Footer() {
   return (
@@ -55,6 +55,13 @@ export default function Footer() {
               >
                 <MessageCircle className="w-4 h-4 text-[#03E39D]" />
                 WhatsApp (16) 99378-2499
+              </a>
+              <a
+                href="mailto:thamiscreator0@gmail.com"
+                className="flex items-center gap-2 hover:text-[#03E39D] transition-colors"
+              >
+                <Mail className="w-4 h-4 text-[#03E39D]" />
+                thamiscreator0@gmail.com
               </a>
               <a
                 href="https://instagram.com/thamiscreator"
